@@ -5,7 +5,7 @@
 // 1. chartAt()
 // Tujuan : Menyalin/ mengambil sebuah character pada tipe data string untuk index tertentu.
 // Contoh case : reverse huruf pada sebuah kata
-// const kata = "Programming";
+const kata = "Programming";
 // let hasilKata = "";
 // for (let i = kata.length - 1; i >= 0; i--) {
 //   hasilKata += kata.charAt(i);

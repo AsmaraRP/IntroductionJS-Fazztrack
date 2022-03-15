@@ -24,12 +24,13 @@ function SeleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
     return a - b;
   });
 
+  // validasi jika tidak ada nilai di antara nilaiAwal dan nilai Akhir
+  if (!seleksi.length) {
+    return console.log("Output :  Nilai tidak ditemukan");
+  }
   // mencetak output
   console.log(`Output : ${seleksi}`);
   console.log(seleksi);
-  if (seleksi) {
-    return console.log("Output :  Nilai tidak ditemukan");
-  }
 }
 
 // Pengujian 1
@@ -39,4 +40,6 @@ function SeleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
 // Pengujian 3
 // SeleksiNilai(4, 17, [2, 25, 4]);
 // Pengujian 4
-// SeleksiNilai(5, 17, [2, 25, 4, 14, 17, 30, 8]);
+// SeleksiNilai(5, 17, [2, 25, 4, 1, 30, 18]);
+// Pengujian tambahan
+// SeleksiNilai(-1, 1, [0, 2, 3, 4, 5, 6, 7]);
