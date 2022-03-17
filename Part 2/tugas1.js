@@ -17,7 +17,7 @@
 // Tujuan : Memeriksa sebuah string apakah berada pada string lainnya dengan nilai hasil berupa boolean.
 // Contoh case : Mendeteksi nama pada sebuah teks kumpulan nama
 // const kumpulanNama = "Siti Adit Jaya Kurnia Basuki Tamara Joko Dea Suci Tita Cinta Raya Darma Laila Anis Puji Santo";
-// const namaTarget = "Luna";
+// const namaTarget = "Siti";
 // let hasilCek = kumpulanNama.includes(namaTarget);
 // if (hasilCek) {
 //   console.log(`Nama ${namaTarget} masuk dalam list`);

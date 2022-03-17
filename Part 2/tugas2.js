@@ -10,8 +10,8 @@ function SearchName(cari, batas, callback) {
     // Proses searching
     if (namaTarget.includes(cari)) {
       // Mengkapitalkan huruf awal
-      hurufAwal = namaTarget.slice(0, 1).toUpperCase();
-      hurufLain = namaTarget.slice(1);
+      let hurufAwal = namaTarget.slice(0, 1).toUpperCase();
+      let hurufLain = namaTarget.slice(1);
       namaTarget = hurufAwal.concat(hurufLain);
       // Masukan ke wadah hasil
       hasilTarget += `${namaTarget} `;
@@ -34,4 +34,4 @@ function callback(batas, hasilTarget) {
 }
 
 // Pengujian
-SearchName("an", 2, callback);
+SearchName("q", 3, callback);

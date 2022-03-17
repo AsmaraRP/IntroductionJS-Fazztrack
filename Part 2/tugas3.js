@@ -2,7 +2,8 @@ function SeleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
   // validasi input
   if (typeof (nilaiAwal + nilaiAkhir) !== "number") {
     return console.log("Output : Data yang dimasukan harus angka");
-  } else if (!dataArray.every((data) => typeof data == "number")) {
+  }
+  if (!dataArray.every((data) => typeof data == "number")) {
     return console.log("Output : Data array harus berupa angka");
   }
 
