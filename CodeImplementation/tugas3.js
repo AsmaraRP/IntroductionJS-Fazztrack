@@ -1,3 +1,4 @@
+// call function
 FazzFood(75000, "FAZZFOOD50", 5, true);
 function FazzFood(harga, voucer, jarak, pajak) {
   //algoritma PROMO
