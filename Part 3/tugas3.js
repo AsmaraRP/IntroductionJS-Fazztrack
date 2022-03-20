@@ -35,7 +35,7 @@ const cekStock = (barang) => {
 async function cekBarang() {
   try {
     // cek : kaos, celana, jaket, kemeja, topi, jas,sepatu, kacamata
-    const item = "kaos";
+    const item = "daster";
     await cekStock(item);
   } catch (error) {
     console.log(error);
@@ -47,62 +47,62 @@ async function cekBarang() {
 }
 cekBarang();
 // Program 2 (Pengumuman Kelulusan Siswa)
-const statusSiswa = (namaSiswa) => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const dataSiswaLulus = [
-        "siti",
-        "anis",
-        "resti",
-        "hofi",
-        "rian",
-        "agus",
-        "anggy",
-        "akbar",
-        "ikhsan",
-        "adi",
-        "yusuf",
-        "regio",
-        "muhammad",
-        "lain",
-        "angela",
-        "change",
-        "hylos",
-        "batrix",
-        "eudora",
-        "fanny",
-        "karina",
-        "carmila",
-        "cecilia",
-        "febri",
-        "dhea",
-        "juki",
-        "cinta",
-        "elga",
-        "selpi",
-        "shopi",
-        "ridwan",
-      ];
-      let statusLulus = dataSiswaLulus.find((nama) => {
-        return nama === namaSiswa;
-      });
-      if (statusLulus) {
-        resolve(statusLulus);
-      } else {
-        reject(new Error(`Siswa atas nama ${namaSiswa} dinyatakan TIDAK LULUS`));
-      }
-    }, 3000);
-  });
-};
-statusSiswa("anis")
-  .then((nama) => {
-    console.log(`Selamat, ${nama} dinyatakan LULUS`);
-  })
-  .catch((error) => {
-    console.log(error);
-  })
-  .finally(() => {
-    console.log("---------------------------------\n");
-    console.log("Pengecekan Selesai");
-    console.log("---------------------------------\n\n");
-  });
+// const statusSiswa = (namaSiswa) => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const dataSiswaLulus = [
+//         "siti",
+//         "anis",
+//         "resti",
+//         "hofi",
+//         "rian",
+//         "agus",
+//         "anggy",
+//         "akbar",
+//         "ikhsan",
+//         "adi",
+//         "yusuf",
+//         "regio",
+//         "muhammad",
+//         "lain",
+//         "angela",
+//         "change",
+//         "hylos",
+//         "batrix",
+//         "eudora",
+//         "fanny",
+//         "karina",
+//         "carmila",
+//         "cecilia",
+//         "febri",
+//         "dhea",
+//         "juki",
+//         "cinta",
+//         "elga",
+//         "selpi",
+//         "shopi",
+//         "ridwan",
+//       ];
+//       let statusLulus = dataSiswaLulus.find((nama) => {
+//         return nama === namaSiswa;
+//       });
+//       if (statusLulus) {
+//         resolve(statusLulus);
+//       } else {
+//         reject(new Error(`Siswa atas nama ${namaSiswa} dinyatakan TIDAK LULUS`));
+//       }
+//     }, 3000);
+//   });
+// };
+// statusSiswa("anis")
+//   .then((nama) => {
+//     console.log(`Selamat, ${nama} dinyatakan LULUS`);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   })
+//   .finally(() => {
+//     console.log("---------------------------------\n");
+//     console.log("Pengecekan Selesai");
+//     console.log("---------------------------------\n\n");
+//   });

@@ -14,7 +14,7 @@ const cekHariKerja = (day) => {
   });
 };
 
-cekHariKerja("minggu")
+cekHariKerja("senin")
   .then((hasil) => {
     console.log(`Hari ${hasil} adalah Hari kerja `);
     // Didalam then berisi perintah apabila kondisi pada fungsi cekhariKerja sesuai/bekerja
@@ -31,7 +31,7 @@ cekHariKerja("minggu")
 
 async function pengecekan() {
   try {
-    const hari = "senin";
+    const hari = "minggu";
     await cekHariKerja(hari);
     console.log(`Hari ${hari} adalah Hari Kerja`);
     // Didalam try berisi perintah/kumpulan perintah yang dapat dijalankan dan memiliki potensial error
