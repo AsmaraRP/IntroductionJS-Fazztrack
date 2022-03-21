@@ -1,4 +1,4 @@
-reverseWords("Saya Belajar Bernyanyi dengan Javascript");
+reverseWords("Saya Belajar dengan Javascript");
 function reverseWords(sentence) {
   sentence = sentence.split(" ");
   let result = [];

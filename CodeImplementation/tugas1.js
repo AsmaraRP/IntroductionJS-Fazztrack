@@ -1,4 +1,4 @@
-cekPalindrom("Malam");
+cekPalindrom("kasur rusak");
 function cekPalindrom(word) {
   word = word.toString().toLowerCase();
   let reverseWord = "";

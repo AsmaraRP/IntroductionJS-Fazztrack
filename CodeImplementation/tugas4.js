@@ -1,3 +1,4 @@
+//call function
 devideAndSort(5956560159466056);
 function devideAndSort(num) {
   num = num
@@ -11,7 +12,7 @@ function devideAndSort(num) {
       partResult = partResult.sort().join("");
       return partResult;
     });
-  num = num.join("");
-  console.log(num * 1);
-  console.log(typeof (num * 1));
+  num = num.join("") * 1;
+  console.log(num);
+  console.log(typeof num);
 }
