@@ -24,10 +24,9 @@ function FazzFood(harga, voucer, jarak, pajak) {
   }
   console.log(`Biaya Antar : ${tarifAntar}`);
   // proses PAJAK
+  let tarifPajak = 0;
   if (pajak) {
     tarifPajak = harga * 0.05;
-  } else {
-    tarifPajak = 0;
   }
   console.log(`Pajak : ${tarifPajak}`);
   // proses PERHITUNGAN TOTAL
